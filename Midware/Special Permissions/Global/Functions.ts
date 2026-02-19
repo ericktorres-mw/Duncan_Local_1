@@ -59,6 +59,7 @@ export const isValidRecord = (recordType: string): boolean => {
         [record.Type.VENDOR]: true,
         [record.Type.VENDOR_BILL]: true,
         [record.Type.VENDOR_PAYMENT]: true,
+        [record.Type.PURCHASE_ORDER]: true,
     };
 
     return recordType in validRecordTypes;
